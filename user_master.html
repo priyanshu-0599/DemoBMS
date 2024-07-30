@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  margin-right: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #007bff;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user span {
+  font-weight: bold;
+  color: #333;
+}
+
+.user-actions {
+  display: flex;
+  margin-left: 10px;
+}
+
+.user-actions button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.user-actions button:hover {
+  background-color: #0056b3;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.title h2 {
+  margin: 0;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filter select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.filter button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.filter button:hover {
+  background-color: #0056b3;
+}
+
+.filter button:last-child {
+  background-color: #ccc;
+  color: #333;
+}
+
+.filter button:last-child:hover {
+  background-color: #aaa;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.table th,
+.table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.table td img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.table .status-active {
+  color: green;
+}
+
+.table .status-inactive {
+  color: red;
+}
+
+.table .action-edit {
+  color: blue;
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #ccc;
+  color: #333;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.pagination button:hover {
+  background-color: #aaa;
+}
+
+.pagination button.active {
+  background-color: #007bff;
+  color: #fff;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>User</h1>
+
+  <div class="header">
+    <div class="logo">
+      <img src="https://www.flaticon.com/svg/static/icons/svg/964/964976.svg" alt="Logo">
+      <span>Ecom Express</span>
+    </div>
+    <nav class="nav">
+      <li><a href="#">Dashboard</a></li>
+      <li><a href="#">Configuration</a></li>
+      <li><a href="#">Master</a></li>
+      <li><a href="#">Meeting Workspace</a></li>
+      <li><a href="#">Document Collection</a></li>
+      <li><a href="#">Reports</a></li>
+      <li><a href="#">Evaluation</a></li>
+      <li><a href="#">Library</a></li>
+    </nav>
+    <div class="user">
+      <img src="https://www.flaticon.com/svg/static/icons/svg/149/149071.svg" alt="User">
+      <span>John Doe</span>
+      <div class="user-actions">
+        <button><img src="https://www.flaticon.com/svg/static/icons/svg/1319/1319137.svg" alt="File"></button>
+        <button><img src="https://www.flaticon.com/svg/static/icons/svg/3377/3377460.svg" alt="PDF"></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="title">
+    <h2>Master / User</h2>
+  </div>
+
+  <div class="filter">
+    <select>
+      <option value="all">All</option>
+      <option value="active">Active</option>
+      <option value="inactive">Inactive</option>
+    </select>
+    <select>
+      <option value="all">All</option>
+      <option value="active">Active</option>
+      <option value="inactive">Inactive</option>
+    </select>
+    <button>Search</button>
+    <button>Reset</button>
+    <button>Add New User</button>
+  </div>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Date & Time</th>
+        <th>Profile Picture</th>
+        <th>Name</th>
+        <th>Role</th>
+        <th>Email Address</th>
+        <th>User Login</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>12/03/2023 02:45</td>
+        <td><img src="https://www.flaticon.com/svg/static/icons/svg/145/145868.svg" alt="User"></td>
+        <td>Aakriti Nagar</td>
+        <td>General Manager</td>
+        <td>aakriti@gmail.com</td>
+        <td>Aakriti</td>
+        <td class="status-active">• Active</td>
+        <td><span class="action-edit">✏️</span></td>
+      </tr>
+      <tr>
+        <td>12/03/2023 02:45</td>
+        <td><img src="https://www.flaticon.com/svg/static/icons/svg/145/145868.svg" alt="User"></td>
+        <td>Aarti Joshi</td>
+        <td>Invitee</td>
+        <td>Demo Text</td>
+        <td>Aarti Joshi</td>
+        <td class="status-inactive">• Inactive</td>
+        <td><span class="action-edit">✏️</span></td>
+      </tr>
+      <tr>
+        <td>12/03/2023 02:45</td>
+        <td><img src="https://www.flaticon.com/svg/static/icons/svg/145/145868.svg" alt="User"></td>
+        <td>Raj Shah</td>
+        <td>Invitee</td>
+        <td>Demo Text</td>
+        <td>Raj123</td>
+        <td class="status-active">• Active</td>
+        <td><span class="action-edit">✏️</span></td>
+      </tr>
+      <tr>
+        <td>12/03/2023 02:45</td>
+        <td><img src="https://www.flaticon.com/svg/static/icons/svg/145/145868.svg" alt="User"></td>
+        <td>Mahima Jain</td>
+        <td>Demo Text</td>
+        <td>Demo Text</td>
+        <td>Mahima</td>
+        <td class="status-active">• Active</td>
+        <td><span class="action-edit">✏️</span></td>
+      </tr>
+      <tr>
+        <td>12/03/2023 02:45</td>
+        <td><img src="https://www.flaticon.com/svg/static/icons/svg/145/145868.svg" alt="User"></td>
+        <td>Riya Garg</td>
+        <td>Demo Text</td>
+        <td>Demo Text</td>
+        <td>Garg345</td>
+        <td class="status-active">• Active</td>
+        <td><span class="action-edit">✏️</span></td>
+      </tr>
+      <tr>
+        <td>12/03/2023 02:45</td>
+        <td><img src="https://www.flaticon.com/svg/static/icons/svg/145/145868.svg" alt="User"></td>
+        <td>Abhishek Sharma</td>
+        <td>Demo Text</td>
+        <td>Demo Text</td>
+        <td>Abhishek</td>
+        <td class="status-active">• Active</td>
+        <td><span class="action-edit">✏️</span></td>
+      </tr>
+      <tr>
+        <td>12/03/2023 02:45</td>
+        <td><img src="https://www.flaticon.com/svg/static/icons/svg/145/145868.svg" alt="User"></td>
+        <td>Yash Kumar</td>
+        <td>Demo Text</td>
+        <td>Demo Text</td>
+        <td>Yash789</td>
+        <td class="status-active">• Active</td>
+        <td><span class="action-edit">✏️</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="pagination">
+    <button>← Prev</button>
+    <button class="active">1</button>
+    <button>Next →</button>
+  </div>
+
+</div>
+</body>
+</html>

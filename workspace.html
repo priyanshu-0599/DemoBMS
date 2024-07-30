@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.logo h1 {
+  margin-left: 10px;
+  font-size: 1.5em;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user img {
+  width: 30px;
+  border-radius: 50%;
+}
+
+.user-info {
+  margin-left: 10px;
+}
+
+.user-info h3 {
+  margin: 0;
+  font-size: 1em;
+}
+
+.user-info p {
+  margin: 0;
+  font-size: 0.8em;
+}
+
+.page-header {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.page-header h2 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.workspace {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.workspace h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.workspace-actions {
+  display: flex;
+  align-items: center;
+}
+
+.workspace-actions button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.workspace-actions button:hover {
+  background-color: #3e8e41;
+}
+
+.workspace-search {
+  display: flex;
+  align-items: center;
+}
+
+.workspace-search input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.workspace-search button {
+  background-color: #ccc;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.workspace-search button:hover {
+  background-color: #bbb;
+}
+
+.workspace-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.workspace-card {
+  width: 25%;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.workspace-card h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.workspace-card .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.workspace-card .info span {
+  font-size: 0.8em;
+}
+
+.workspace-card .actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.workspace-card .actions button {
+  background-color: #ccc;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.workspace-card .actions button:hover {
+  background-color: #bbb;
+}
+
+.workspace-card .actions button.active {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="logo">
+    <img src="logo.png" alt="Logo">
+    <h1>Ecom Express</h1>
+  </div>
+  <div class="navigation">
+    <a href="#">Dashboard</a>
+    <a href="#">Configuration</a>
+    <a href="#">Master</a>
+    <a href="#">Meeting Workspace</a>
+    <a href="#">Document Collection</a>
+    <a href="#">Reports</a>
+    <a href="#">Evaluation</a>
+    <a href="#">Library</a>
+  </div>
+  <div class="user">
+    <img src="user.png" alt="User">
+    <div class="user-info">
+      <h3>John Doe</h3>
+      <p>john@gmail.com</p>
+    </div>
+  </div>
+</div>
+<div class="page-header">
+  <h2>Meeting Workspace / Recent Workspaces</h2>
+</div>
+<div class="workspace">
+  <h2>Workspaces</h2>
+  <div class="workspace-actions">
+    <button>Create New Workspace</button>
+  </div>
+  <div class="workspace-search">
+    <input type="text" placeholder="Search">
+    <button>Search</button>
+    <button>Reset</button>
+  </div>
+</div>
+<div class="workspace-content">
+  <div class="workspace-card">
+    <h3>BOARD COMMITTEE</h3>
+    <h3>132nd Meeting of Board Committee</h3>
+    <div class="info">
+      <span>28/10/22</span>
+      <span>09:00 AM-11:00 AM</span>
+      <span>Online Conference</span>
+    </div>
+    <div class="actions">
+      <button class="active">Published</button>
+      <button>View</button>
+      <button>Board Book</button>
+      <button>Edit</button>
+      <button>Delete</button>
+    </div>
+  </div>
+  <div class="workspace-card">
+    <h3>BOARD COMMITTEE</h3>
+    <h3>132nd Meeting of Board Committee</h3>
+    <div class="info">
+      <span>26/10/22</span>
+      <span>09:00 AM-11:00 AM</span>
+      <span>Online Conference</span>
+    </div>
+    <div class="actions">
+      <button class="active">Published</button>
+      <button>View</button>
+      <button>Board Book</button>
+      <button>Edit</button>
+      <button>Delete</button>
+    </div>
+  </div>
+  <div class="workspace-card">
+    <h3>BOARD COMMITTEE</h3>
+    <h3>132nd Meeting of Board Committee</h3>
+    <div class="info">
+      <span>28/10/22</span>
+      <span>09:00 AM-11:00 AM</span>
+      <span>Online Conference</span>
+    </div>
+    <div class="actions">
+      <button class="active">Scheduled</button>
+      <button>View</button>
+      <button>Board Book</button>
+      <button>Edit</button>
+      <button>Delete</button>
+    </div>
+  </div>
+  <div class="workspace-card">
+    <h3>BOARD COMMITTEE</h3>
+    <h3>132nd Meeting of Board Committee</h3>
+    <div class="info">
+      <span>28/10/22</span>
+      <span>09:00 AM-11:00 AM</span>
+      <span>Online Conference</span>
+    </div>
+    <div class="actions">
+      <button class="active">Scheduled</button>
+      <button>View</button>
+      <button>Board Book</button>
+      <button>Edit</button>
+      <button>Delete</button>
+    </div>
+  </div>
+  <div class="workspace-card">
+    <h3>BOARD COMMITTEE</h3>
+    <h3>132nd Meeting of Board Committee</h3>
+    <div class="info">
+      <span>29/10/22</span>
+      <span>09:00 AM-11:00 AM</span>
+      <span>Online Conference</span>
+    </div>
+    <div class="actions">
+      <button class="active">Post</button>
+      <button>View</button>
+      <button>Board Book</button>
+      <button>Edit</button>
+      <button>Delete</button>
+    </div>
+  </div>
+  <div class="workspace-card">
+    <h3>BOARD COMMITTEE</h3>
+    <h3>132nd Meeting of Board Committee</h3>
+    <div class="info">
+      <span>29/10/22</span>
+      <span>09:00 AM-11:00 AM</span>
+      <span>Online Conference</span>
+    </div>
+    <div class="actions">
+      <button class="active">Post</button>
+      <button>View</button>
+      <button>Board Book</button>
+      <button>Edit</button>
+      <button>Delete</button>
+    </div>
+  </div>
+  <div class="workspace-card">
+    <h3>BOARD COMMITTEE</h3>
+    <h3>132nd Meeting of Board Committee</h3>
+    <div class="info">
+      <span>29/10/22</span>
+      <span>09:00 AM-11:00 AM</span>
+      <span>Online Conference</span>
+    </div>
+    <div class="actions">
+      <button class="active">Post</button>
+      <button>View</button>
+      <button>Board Book</button>
+      <button>Edit</button>
+      <button>Delete</button>
+    </div>
+  </div>
+  <div class="workspace-card">
+    <h3>BOARD COMMITTEE</h3>
+    <h3>132nd Meeting of Board Committee</h3>
+    <div class="info">
+      <span>29/10/22</span>
+      <span>09:00 AM-11:00 AM</span>
+      <span>Online Conference</span>
+    </div>
+    <div class="actions">
+      <button class="active">Post</button>
+      <button>View</button>
+      <button>Board Book</button>
+      <button>Edit</button>
+      <button>Delete</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
